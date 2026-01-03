@@ -1,5 +1,5 @@
-{
-  "name": "cxxc",
-  "compatibility_date": "2026-01-03",
-  "main": "src/index.js"
-}
+name = "your-project-name"
+compatibility_date = "2026-01-03"
+
+[assets]
+directory = "."
