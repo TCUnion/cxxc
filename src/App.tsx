@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Bicycle, ArrowRight } from 'lucide-react';
+import { Bike, ArrowRight } from 'lucide-react';
 import './index.css';
 
 const Navbar = () => (
