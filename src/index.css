@@ -1,26 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  --font-display: 'Instrument Serif', serif;
-  --font-body: 'Inter', sans-serif;
-  --font-mono: 'DM Mono', monospace;
-
-  --color-bg: #1A1A1D;
-  --color-bg-alt: #131315;
-  --color-accent: #FF5C00;
-  --color-success: #22C55E;
-  --color-text: #FFFFFF;
-  --color-text-muted: #A1A1AA;
-  --color-nav-bg: rgba(255, 255, 255, 0.08);
-  --color-border: rgba(255, 255, 255, 0.15);
-
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-body);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  background-color: theme('colors.bg');
+  color: theme('colors.text');
+  font-family: theme('fontFamily.body');
 }
 
 body {
@@ -28,32 +13,16 @@ body {
 }
 
 .glass {
-  background: var(--color-nav-bg);
+  background: theme('colors.nav-bg');
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--color-border);
-}
-
-h1, h2, h3 {
-  font-family: var(--font-display);
-}
-
-.font-mono {
-  font-family: var(--font-mono);
+  border: 1px solid theme('colors.border');
 }
 
 .btn-primary {
-  background-color: var(--color-accent);
-  color: white;
-  padding: 12px 28px;
-  border-radius: 999px;
-  border: none;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.2s ease, filter 0.2s ease;
+  @apply bg-accent text-white px-7 py-3 rounded-full font-semibold border-none cursor-pointer transition-transform duration-200;
 }
 
 .btn-primary:hover {
-  transform: scale(1.05);
-  filter: brightness(1.1);
+  @apply scale-105 brightness-110;
 }
