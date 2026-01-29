@@ -5,8 +5,18 @@ const Footer = () => (
         <div className="text-3xl font-bold italic font-display text-accent">
             CXXC
         </div>
-        <div className="font-mono text-[10px] text-text-muted opacity-40 mt-6 md:mt-0">
-            © 2026 CXXC CYCLING. ALL RIGHTS RESERVED.
+        <div className="flex flex-col items-center md:items-end mt-6 md:mt-0 gap-2">
+            <div className="font-mono text-[10px] text-text-muted opacity-40">
+                © 2026 CXXC CYCLING. ALL RIGHTS RESERVED.
+            </div>
+            <a
+                href="https://www.tsu.com.tw/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono text-[10px] text-text-muted hover:text-accent transition-colors"
+            >
+                Powered by TCU
+            </a>
         </div>
     </footer>
 );
