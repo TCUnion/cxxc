@@ -26,7 +26,7 @@ const Hero = () => (
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className="text-7xl md:text-8xl font-serif font-medium leading-tight mb-8 text-white tracking-wide"
+                className="text-7xl md:text-8xl font-serif font-medium leading-tight mb-4 text-white tracking-wide"
             >
                 泥土上的<br />
                 <span className="italic relative inline-block">
@@ -39,14 +39,29 @@ const Hero = () => (
                     />
                 </span>
             </motion.h1>
-            <motion.p
+
+            <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
+                className="text-2xl md:text-3xl font-display font-bold text-white/40 mb-8 tracking-widest uppercase"
+            >
+                Culture Carved in Dirt
+            </motion.h2>
+
+            <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 }}
-                className="text-white/80 text-xl md:text-2xl max-w-2xl font-serif leading-relaxed tracking-wide"
+                className="space-y-4 max-w-2xl"
             >
-                我們不蓋水泥建築，我們用輪胎<br />在泥土上刻畫出台灣單車的新文化。
-            </motion.p>
+                <p className="text-white/90 text-xl md:text-2xl font-serif leading-relaxed tracking-wide">
+                    我們不蓋水泥建築，我們用輪胎<br />在泥土上刻畫出台灣單車的新文化。
+                </p>
+                <p className="text-text-muted text-sm md:text-base font-mono leading-relaxed opacity-80">
+                    We build no concrete walls. With our tires,<br />we carve a new culture of cycling into the earth.
+                </p>
+            </motion.div>
         </div>
     </section>
 );

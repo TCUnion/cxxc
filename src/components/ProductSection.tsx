@@ -18,10 +18,18 @@ const ProductSection = () => (
             </div>
             <div className="w-full md:w-1/2 space-y-6">
                 <span className="font-mono text-success font-bold tracking-widest text-xs">CYCLOCROSS</span>
-                <h2 className="text-6xl font-bold font-display">The CX Mastery.</h2>
-                <p className="text-text-muted text-lg">
-                    CYCLOCROSS 越野跑車。專為泥濘賽道與草地競速而生，兼具跑車的迅捷與越野的韌性。
-                </p>
+                <h2 className="text-5xl md:text-6xl font-bold font-display">
+                    The CX Mastery.<br />
+                    <span className="text-2xl md:text-3xl font-serif font-normal italic text-white/60">CX 的極致掌控</span>
+                </h2>
+                <div className="space-y-3">
+                    <p className="text-text-muted text-lg font-serif">
+                        CYCLOCROSS 越野跑車。專為泥濘賽道與草地競速而生，兼具跑車的迅捷與越野的韌性。
+                    </p>
+                    <p className="text-text-muted/60 text-sm font-mono leading-relaxed">
+                        Born for muddy tracks and grassy sprints. Combining the agility of a road bike with the resilience of off-road engineering.
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -39,10 +47,18 @@ const ProductSection = () => (
             </div>
             <div className="w-full md:w-1/2 space-y-6">
                 <span className="font-mono text-accent font-bold tracking-widest text-xs">CROSS-COUNTRY</span>
-                <h2 className="text-6xl font-bold font-display">XC Dominance.</h2>
-                <p className="text-text-muted text-lg">
-                    Conquer the trails with precision. Engineered for efficiency on steep climbs and control on technical descents.
-                </p>
+                <h2 className="text-5xl md:text-6xl font-bold font-display">
+                    XC Dominance.<br />
+                    <span className="text-2xl md:text-3xl font-serif font-normal italic text-white/60">XC 的絕對優勢</span>
+                </h2>
+                <div className="space-y-3">
+                    <p className="text-text-muted text-lg font-serif">
+                        精準征服林道。專為陡峭爬坡的效率與技術下坡的控制力而設計。
+                    </p>
+                    <p className="text-text-muted/60 text-sm font-mono leading-relaxed">
+                        Conquer the trails with precision. Engineered for efficiency on steep climbs and control on technical descents.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
