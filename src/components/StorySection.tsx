@@ -1,10 +1,11 @@
 import React from 'react';
+import storyBg from '../assets/images/story_bg.png';
 
 const StorySection = () => (
     <section className="relative py-40 px-10 md:px-20 flex flex-col items-center justify-center text-center space-y-10 overflow-hidden">
         <div className="absolute inset-0 -z-10 brightness-[0.15]">
             <img
-                src="https://images.unsplash.com/photo-1511994298241-608e28f14fde?q=80&w=2069&auto=format&fit=crop"
+                src={storyBg}
                 alt="Soil Texture"
                 className="w-full h-full object-cover"
                 width="2069"

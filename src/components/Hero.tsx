@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import heroBg from '../assets/images/hero_bg.png';
 
 const Hero = () => (
     <section id="hero" className="relative w-full h-screen flex items-center px-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
             <img
-                src="https://images.unsplash.com/photo-1541625602330-2277a1cd43a7?q=80&w=2070&auto=format&fit=crop"
+                src={heroBg}
                 className="w-full h-full object-cover brightness-50"
                 alt="Hero Background"
                 width="2070"

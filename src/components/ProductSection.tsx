@@ -1,4 +1,6 @@
 import React from 'react';
+import cxBike from '../assets/images/cx_bike.png';
+import xcBike from '../assets/images/xc_bike.png';
 
 const ProductSection = () => (
     <section className="bg-bg-alt py-32 px-10 md:px-20 space-y-40">
@@ -6,7 +8,7 @@ const ProductSection = () => (
         <div className="flex flex-col md:flex-row items-center gap-20">
             <div className="w-full md:w-1/2 rounded-[32px] overflow-hidden aspect-video">
                 <img
-                    src="https://images.unsplash.com/photo-1444491741275-3747c53c99b4?q=80&w=1974&auto=format&fit=crop"
+                    src={cxBike}
                     alt="CX Bike"
                     className="w-full h-full object-cover"
                     width="1974"
@@ -27,7 +29,7 @@ const ProductSection = () => (
         <div className="flex flex-col md:flex-row-reverse items-center gap-20">
             <div className="w-full md:w-1/2 rounded-[32px] overflow-hidden aspect-video">
                 <img
-                    src="https://images.unsplash.com/photo-1544191696-102dbdaeeaa0?q=80&w=2070&auto=format&fit=crop"
+                    src={xcBike}
                     alt="XC Bike"
                     className="w-full h-full object-cover"
                     width="2070"
