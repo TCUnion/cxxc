@@ -18,25 +18,34 @@ const Hero = () => (
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="font-mono text-accent font-bold tracking-[6px] mb-6 text-sm"
+                className="font-mono text-accent/80 font-bold tracking-[6px] mb-8 text-sm"
             >
-                FROM MUD TO DIRT
+                CXXC CULTURE
             </motion.div>
             <motion.h1
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className="text-8xl font-display font-bold leading-tight mb-8"
+                className="text-7xl md:text-8xl font-serif font-medium leading-tight mb-8 text-white tracking-wide"
             >
-                UNLEASH THE<br />BEYOND.
+                泥土上的<br />
+                <span className="italic relative inline-block">
+                    文化刻痕
+                    <motion.div
+                        initial={{ width: 0 }}
+                        animate={{ width: '100%' }}
+                        transition={{ delay: 0.8, duration: 0.8 }}
+                        className="absolute -bottom-2 left-0 h-1 bg-accent/60"
+                    />
+                </span>
             </motion.h1>
             <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 }}
-                className="text-text-muted text-xl max-w-lg"
+                className="text-white/80 text-xl md:text-2xl max-w-2xl font-serif leading-relaxed tracking-wide"
             >
-                Defining the pinnacle of Cyclocross Racers and Cross-country performance.
+                我們不蓋水泥建築，我們用輪胎<br />在泥土上刻畫出台灣單車的新文化。
             </motion.p>
         </div>
     </section>

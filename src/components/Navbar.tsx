@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => (
     <nav className="fixed top-8 left-1/2 -translate-x-1/2 w-[90%] max-w-7xl h-18 glass rounded-2xl flex items-center justify-between px-10 z-50">
-        <div className="text-2xl font-bold italic font-display text-accent">
+        <div className="text-3xl font-black italic font-display text-accent tracking-tighter drop-shadow-[0_2px_4px_rgba(255,107,0,0.3)] transform -skew-x-6">
             CXXC
         </div>
         <div className="hidden md:flex gap-10 text-[13px] font-medium tracking-wide">
